@@ -13,13 +13,13 @@ export default function Header() {
 				</ul>
 			</div>
 			<div className="header-blocks">
-				<img className="logo" src={require("../public/meadow-logo-variant-01.png")} alt="logo" />
+				<img className="logo" src={require("../assets/meadow-logo-variant-01.png")} alt="logo" />
 
 				<p>Meadow AI</p>
 			</div>
 			<div className="header-blocks contact-us">
 				<div>
-					<img className="telephone-icon" src={require("../public/telephone.png")} alt="phone" />
+					<img className="telephone-icon" src={require("../assets/telephone.png")} alt="phone" />
 				</div>
 				<div className="contact-info">
 					<li>Call us now</li>

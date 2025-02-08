@@ -1,0 +1,52 @@
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    border-radius: 30px;
+    background-color: #EDDD5E;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.landing > .landing-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    max-height: 70vh;
+    overflow: hidden;
+    background-color: aqua;
+}
+
+.landing-hero > .hero-image,
+.landing-hero > .hero-text {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.landing-hero > .hero-image {
+    object-fit: cover;
+    width: 100%;
+}
+
+.landing-hero > .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.landing-hero > .hero-text > h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0;
+}
+
+.landing-hero > .hero-text > p {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 0;
+}

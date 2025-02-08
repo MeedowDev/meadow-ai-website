@@ -119,12 +119,13 @@
 	border-radius: 12px;
 }
 
-h2 {
+
+.text-container > h2 {
 	font-size: 1.8rem;
 	margin: 0.5rem 0;
 }
 
-p {
+.text-container > p {
 	font-size: 1rem;
 	color: #555;
 }

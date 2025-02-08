@@ -2,6 +2,7 @@
 import React from "react";
 import "./landing.css";
 import Button from "./button";
+import Infobox from "./infobox";
 import tractorImage from "../assets/hero.png"; 
 import image01 from "../assets/img-01.png";
 import image02 from "../assets/img-02.png";
@@ -13,6 +14,8 @@ const Landing = () => {
 				<img className="hero-image" src={tractorImage} alt="tractor" />
 
 				<div className="hero-text">
+					<Infobox info="This is a test info box"></Infobox>
+
 					<h1>Revolutinizing Small Holder Agriculture</h1>
 					<p>Transforming the future of farming</p>
 					<Button text="Get Started" color="White" link=""></Button>

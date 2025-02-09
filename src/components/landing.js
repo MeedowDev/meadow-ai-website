@@ -53,9 +53,9 @@ const Landing = () => {
 					<div className="install-app">
 						<p>Install Meadow AI (alpha v***)</p>
 						<Stack direction="row" spacing={1}>
-							<Chip label="Android" onClick={handleClick} style={{ backgroundColor: '#333', color: 'white' }} />
-							<Chip label="IOS" onClick={handleClick} style={{ backgroundColor: '#333', color: 'white' }} />
-							<Chip label="Web" onClick={handleClick} style={{ backgroundColor: '#333', color: 'white' }} />
+							<Chip label="Android" onClick={handleClick} style={{ backgroundColor: "#404A3D", color: "white" }} />
+							<Chip label="IOS" onClick={handleClick} style={{ backgroundColor: "#404A3D", color: "white" }} />
+							<Chip label="Web" onClick={handleClick} style={{ backgroundColor: "#404A3D", color: "white" }} />
 						</Stack>
 					</div>
 				</div>

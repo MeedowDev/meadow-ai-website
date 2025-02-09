@@ -13,9 +13,9 @@ export default function Header() {
 				</ul>
 			</div>
 			<div className="header-blocks">
-				<img className="logo" src={require("../assets/meadow-logo-variant-01.png")} alt="logo" />
+				{/* <img className="logo" src={require("../assets/meadow-logo-variant-01.png")} alt="logo" /> */}
 
-				<p>Meadow AI</p>
+				<p className="logo-name">Meadow AI</p>
 			</div>
 			<div className="header-blocks contact-us">
 				<div>

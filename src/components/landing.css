@@ -6,7 +6,7 @@
     min-height: fit-content;
     padding-bottom: 3rem;
 	border-radius: 30px;
-	background-color: #eddd5e;
+	background-color: #A3A847;
 	margin: 2rem;
 	overflow: hidden;
 }
@@ -17,7 +17,6 @@
 	grid-template-rows: 1fr;
 	max-height: 70vh;
 	overflow: hidden;
-	background-color: aqua;
 }
 
 .landing-hero > .hero-image,
@@ -41,9 +40,14 @@
 }
 
 .landing-hero > .hero-text > h1 {
-	font-size: 3.5rem;
+	font-size: 4.5rem;
+	font-family: 'Signika-variable', bold;
 	font-weight: bold;
 	color: white;
+	text-align: center;
+	max-width: 80%;
+	word-wrap: break-word;
+	margin-top: 1rem;
 	margin-bottom: 0;
 }
 
@@ -69,17 +73,47 @@
 	flex-wrap: wrap;
     margin-bottom: 3rem;
     max-width: 1100px;
-	height: 5rem;
+	height: 7rem;
 	width: 100%;
 }
 
 .landing-information > .landing-pre > div {
+	display: flex;
 	flex: 1;
-	height: 90%;
-	outline: 1px white solid;
 	margin-left: 1rem;
 	margin-right: 1rem;
 }
+
+.landing-information > .landing-pre > .contributors {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+}
+.landing-information > .landing-pre > .contributors > p {
+	font-size: 1rem;
+	color: white;
+	margin: 0;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+.landing-information > .landing-pre > .contributors > p > a {
+	text-decoration: none;
+	color: white;
+}
+
+.landing-information > .landing-pre > div > .down {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 6.5rem;
+	width: 6.5rem;
+	margin: auto;
+	background-color: white;
+	border-radius: 50%;
+}
+
 
 .landing-information > .information-card {
 	display: flex;

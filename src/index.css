@@ -1,4 +1,15 @@
 
+@font-face {
+  font-family: 'Signika-variable';
+  src: url('./assets/fonts/Signika-variable.ttf') format('truetype'); /* Update path if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;

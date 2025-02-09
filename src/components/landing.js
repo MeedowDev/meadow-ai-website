@@ -3,17 +3,22 @@ import React from "react";
 import "./landing.css";
 import Button from "./button";
 import Infobox from "./infobox";
-import tractorImage from "../assets/Picture3.jpg"; 
+import tractorImage from "../assets/Picture3.jpg";
 import image01 from "../assets/img-01.png";
 import image02 from "../assets/img-02.png";
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
 
 const Landing = () => {
 	function navigateTo(location) {
 		window.location.href = `${location}`;
 	}
+	const handleClick = () => {
+		console.info("You clicked the Chip.");
+	};
 	return (
 		<section className="landing">
 			<div className="landing-hero">
@@ -45,7 +50,14 @@ const Landing = () => {
 							<ArrowDownwardIcon />
 						</div>
 					</div>
-					<div className="data-driven-agriculture"></div>
+					<div className="install-app">
+						<p>Install Meadow AI (alpha v***)</p>
+						<Stack direction="row" spacing={1}>
+							<Chip label="Android" onClick={handleClick} style={{ backgroundColor: '#333', color: 'white' }} />
+							<Chip label="IOS" onClick={handleClick} style={{ backgroundColor: '#333', color: 'white' }} />
+							<Chip label="Web" onClick={handleClick} style={{ backgroundColor: '#333', color: 'white' }} />
+						</Stack>
+					</div>
 				</div>
 				<div className="information-card" id="info-card">
 					<div className="content-wrapper">
@@ -59,17 +71,19 @@ const Landing = () => {
 							<h2>
 								Introducing <span className="highlight-green">Data Driven</span> agriculture.
 							</h2>
-							
+
 							<p>
-								Using machine learning for data-driven crop cultivation allows farmers to optimize their yield by analyzing various factors such as soil quality, weather patterns, and crop health. This technology helps in making informed decisions, reducing waste, and increasing productivity.
+								Using machine learning for data-driven crop cultivation allows farmers to optimize their yield
+								by analyzing various factors such as soil quality, weather patterns, and crop health. This
+								technology helps in making informed decisions, reducing waste, and increasing productivity.
 							</p>
 							<ul className="features-list">
-								<li>✔️ Gourmet Mushrooms</li>
-								<li>✔️ Natural Healthy Products</li>
-								<li>✔️ Lavender Farming</li>
-								<li>✔️ Best Quality Standards</li>
-								<li>✔️ Fertilizer Distribution</li>
-								<li>✔️ Organic Fertilizer</li>
+								<li>✔️ Increased crop yield</li>
+								<li>✔️ Efficient resource utilization</li>
+								<li>✔️ Improved crop quality</li>
+								<li>✔️ Reduced environmental impact</li>
+								<li>✔️ Enhanced decision making</li>
+								<li>✔️ Cost savings</li>
 							</ul>
 							<Button text="Know More" color="#5B8C51" link="" text_color="white"></Button>
 						</div>
